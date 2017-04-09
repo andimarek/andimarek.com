@@ -1,6 +1,6 @@
 +++
 date = "2015-05-21T14:32:00+02:00"
-title = "flux architecture distilled"
+title = "Flux Architecture distilled (and a bit about AngularJS)"
 draft = false
 
 +++
@@ -15,7 +15,7 @@ So I will try to grap the essence of Flux (as I understand it):
 
 When you watch the Intro Video closely, you will see that Flux is motivated with an example of an app:
 
-{<1>}![](http://cdn.infoq.com/statics_s2_20150519-0054u2/resource/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png)
+![](http://cdn.infoq.com/statics_s2_20150519-0054u2/resource/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png)
 
 The Model upates the View and View changes are reflected in the Model. This is could be a typical Angular app with two-way binding.
 
@@ -32,7 +32,7 @@ The Dispatcher is the central element to coordinate the Model (Store) changes. T
 
 And that's why this picture is not very good:
 
-{<2>}![](http://cdn.infoq.com/statics_s2_20150519-0054u2/resource/news/2014/05/facebook-mvc-flux/en/resources/flux-react.png)
+![](http://cdn.infoq.com/statics_s2_20150519-0054u2/resource/news/2014/05/facebook-mvc-flux/en/resources/flux-react.png)
 
 There should be more than one Store and even more Views.
 
