@@ -10,7 +10,7 @@ For the last 1,5 years I've been involved in developing two AngularJS applicatio
 
 The following three rules I think are the most important and the most general. 
 
-**1. Rule: Use Directives to structure your app.**
+__1. Rule: Use Directives to structure your app.__
 
 [Directives](https://docs.angularjs.org/guide/directive) are probably the most complex feature in Angular, but also the most important in regards to your architecture. Always create a directive to encapsulate some specific responsibility (in the best case only one). 
 
