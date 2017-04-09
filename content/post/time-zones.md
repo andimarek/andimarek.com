@@ -9,7 +9,7 @@ I spend more time than I ever wanted over the last decade dealing with time zone
 This post is here to help with that: It's not a complete coverage of time zones or an introduction. It's based on my experience what the most common mistakes are and what is least understood. I will not cover specific languages or libraries: These are general informations, which apply to almost any environment.
 
 
-##### Time zones
+### Time zones
 
 Every location on earth has a time zone associated with it.
 
@@ -26,7 +26,7 @@ One warning about the format: Time zones in the format `Etc/GMT` are especially 
 
 Because time zone rules can change at any time, the list of time zones should be updated every now and then (by updating the language/library used). But to be honest: The practical consequences of out-dated time zones rules are limited to use cases with rather exotic time zones. The most important time zones (US, Europe, China, India, Japan etc) don't change very often.
 
-##### Time zone vs offset
+### Time zone vs offset
 
 One common misconception is that the time zone is 'UTC-XX'. Technically this might cause no bugs currently for some zones, which don't use daylight saving time, but it's still wrong.
 
@@ -36,7 +36,7 @@ Also just because "UTC+8" is the current fix offset for Beijing, it's not guaran
 
 **So please use a full time zone name whenever possible.**
 
-##### Time representations
+### Time representations
 
 The two most common ways to express a time is the ISO-8601 format or the unix timestamp: (And of course there a countless custom variations)
 
@@ -58,7 +58,7 @@ A few things about that:
 
 - I recommend to use the ISO-8601 format over the unix timestamp. Because it's human readable and includes a explicit time zone info, which makes it harder to ignore.
 
-##### A time without an offset is not a real time
+### A time without an offset is not a real time
 
 This might be the single biggest cause for time zone related bugs: Developers just forgetting about the time zone.
 
@@ -69,7 +69,7 @@ What happens a lot is that developers just ignore or forget the think about the 
 I really think this a big API design flaw: There should never be a implicit time zone. I highly recommend always be explicit about the time zone, even if the default one is the right one. In pseudo code: `printNow(TimeZone.getDefault())` is just a lot better than `printNow()`.
 
 
-##### When you really don't want a time zone  
+### When you really don't want a time zone  
 
 Sometimes a time zone is really not relevant. What this means is that it's not important what specific point in time it really is. This is sometimes called a "Local Time" or "Local Date". 
 
@@ -90,7 +90,7 @@ I have seen a lot of hacks and workarounds to fix time zone problems with someth
 Some libraries/languages have special "Local Date" support (e.g. Joda-Time in Java or Java 8 built-in). They can be useful but I still prefer to use a String. Because it's likely that at one point it needs to be converted into JSON or saved in a DB or serialized in some format and than it will be converted into a real date object with some kind of default time zone without thinking about it.
 
 
-##### Debugging time zone problems
+### Debugging time zone problems
 
 Of course every environment or system is too unique to have concrete rules for finding time zone problems.
 
@@ -100,7 +100,7 @@ Most of the time there are half a dozen or more places to check. The tricky part
 
 This all adds up and it can happen that it takes days to analyse and fix a time zone problem.
 
-##### Conclusion
+### Conclusion
 
 Time zone bugs are very hard to fix and should be avoided in the first place. 
 **The most important rule to achieve that is to make everything involving time zones very explicit.**
