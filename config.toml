@@ -13,7 +13,7 @@ copyright = "&copy; Andreas Marek"
     # Disqus shortname
     # disqus = "Your disqus shortname"
     # Google Analytics API key.
-    ga_api_key = "Your Google Analytics tracking id"
+    ga_api_key = "UA-55733269-1"
     # Mixpanel API key.
     # mixpanel_api_key = "Your Mixpanel API key"
     # author = "Your Name"
