@@ -1,7 +1,7 @@
 +++
 date = "2016-01-16T11:01:05+02:00"
 title = "Time zones for Developers"
-draft = true
+draft = false
 
 +++
 I spend more time than I ever wanted over the last decade dealing with time zone related problems. Most of them were caused by bugs introduced by developers (including myself) who didn't know enough about it.
