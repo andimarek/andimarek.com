@@ -1,5 +1,5 @@
 +++
-date = "2017-06-04:11:15+02:00"
+date = "2017-06-04:12:00:15+02:00"
 title = "contract testing with GraphQL"
 draft = false
 
