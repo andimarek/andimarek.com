@@ -1,11 +1,9 @@
 +++
 date = "2017-06-04T12:00:15+02:00"
-title = "contract testing with GraphQL"
+title = "Contract testing with GraphQL"
 draft = false
 
 +++
-
-# Contract testing with GraphQL
 
 Contract tests (or [Consumer-driven contract testing](https://www.martinfowler.com/articles/consumerDrivenContracts.html) ) 
 "are an essential part of a mature microservice testing portfolio, enabling independent service deployments" 
@@ -24,7 +22,7 @@ mobile client app and the server. But as a generic solution it is in noway limit
 microservices in the backend.  
 
 Because GraphQL is statically typed it simplifies contract testing: the Provider exposes the Schema via Introspection Query
-and this can be used to check if the Consumer requests are valid. This check is done without actually calling the Provider (except the Introspection query).
+and this can be used to check if the Consumer requests are valid. This check is done without actually calling the Provider (except for the Introspection query).
 
 
 ## graphql-contract-checker
