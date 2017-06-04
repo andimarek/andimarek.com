@@ -29,8 +29,11 @@ and this can be used to check if the Consumer requests are valid. This check is 
 
 To demonstrate this approach I created the project [graphql-contract-checker](https://github.com/andimarek/graphql-contract-checker).
 
-It is basically one method which takes three inputs: the query the Consumer wants to check, the "old" Introspection result 
-(from a time where the Contract was valid) and the current Introspection result (the schema currently in usage).
+It is basically one method which takes three inputs: 
+
+- the query the Consumer wants to check, 
+- the "old" Introspection result (from a time where the Contract was valid) 
+- the current Introspection result (the schema currently in usage).
 
 It then returns a boolean to indicate if the Provider still satisfies the expectations of the Consumer.
 
@@ -38,8 +41,8 @@ A full working example is [graphql-contract-checker-example](https://github.com/
 It emulates a Consumer microservice which checks via Gradle task if the contract is valid. Details can be found in the README.
 
 
-Because the Provider is never called the check is very fast and it can easily be used to check dozens of different queries.
-Also because every GraphQL query specifies exactly what should be returned it is assured that the Consumer receives exactly what it needs. 
+Because the Provider is never called the check is very fast and it be easily used to check dozens of different queries.
+Also because every GraphQL query specifies exactly what should be returned, it is assured that the Consumer receives exactly what it needs. 
 
 
 ## Limits
