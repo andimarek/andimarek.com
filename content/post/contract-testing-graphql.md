@@ -49,7 +49,7 @@ Also because every GraphQL query specifies exactly what should be returned, it i
 
 It is only checked if the Provider satisfies the request: if the request is valid and if the types haven't changed. But because the 
 Provider is never actually called there is still room things that can go wrong. Depending on how much test coverage you want this means
-you want addtional integration tests. 
+you want additional integration tests. 
 
 
 ## Feedback
