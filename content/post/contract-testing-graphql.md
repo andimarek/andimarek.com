@@ -54,5 +54,5 @@ you want additional integration tests.
 
 ## Feedback
 
-You can reach out to me via twitter [@andimarek](https://github.com/andimarek/graphql-contract-checker-example) if you have any kind of 
+You can reach out to me via twitter [@andimarek](https://twitter.com/andimarek) if you have any kind of 
 feedback.
